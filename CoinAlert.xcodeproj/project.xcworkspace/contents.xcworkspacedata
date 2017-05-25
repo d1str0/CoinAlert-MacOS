@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CoinAlert MacOS.xcodeproj">
+      location = "self:/Users/brady/XCodeProjects/CoinAlert-macOS/CoinAlert.xcodeproj">
    </FileRef>
 </Workspace>

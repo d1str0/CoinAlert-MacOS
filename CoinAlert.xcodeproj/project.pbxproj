@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23FF4D811ED66E7800C1DEEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23FF4D801ED66E7800C1DEEB /* Assets.xcassets */; };
 		89C5BC2B1E1C204600A0BA76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C5BC2A1E1C204600A0BA76 /* AppDelegate.swift */; };
 		89C5BC301E1C204600A0BA76 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89C5BC2E1E1C204600A0BA76 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23FF4D801ED66E7800C1DEEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23FF4D821ED67B0C00C1DEEB /* CoinAlert MacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "CoinAlert MacOS.entitlements"; sourceTree = "<group>"; };
 		89C5BC271E1C204600A0BA76 /* CoinAlert MacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoinAlert MacOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C5BC2A1E1C204600A0BA76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89C5BC2F1E1C204600A0BA76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -48,9 +51,11 @@
 		89C5BC291E1C204600A0BA76 /* CoinAlert MacOS */ = {
 			isa = PBXGroup;
 			children = (
+				23FF4D821ED67B0C00C1DEEB /* CoinAlert MacOS.entitlements */,
 				89C5BC2A1E1C204600A0BA76 /* AppDelegate.swift */,
 				89C5BC2E1E1C204600A0BA76 /* MainMenu.xib */,
 				89C5BC311E1C204600A0BA76 /* Info.plist */,
+				23FF4D801ED66E7800C1DEEB /* Assets.xcassets */,
 			);
 			path = "CoinAlert MacOS";
 			sourceTree = "<group>";
@@ -87,11 +92,17 @@
 				TargetAttributes = {
 					89C5BC261E1C204600A0BA76 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = W6CV48Y9Q8;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
-			buildConfigurationList = 89C5BC221E1C204600A0BA76 /* Build configuration list for PBXProject "CoinAlert MacOS" */;
+			buildConfigurationList = 89C5BC221E1C204600A0BA76 /* Build configuration list for PBXProject "CoinAlert" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23FF4D811ED66E7800C1DEEB /* Assets.xcassets in Resources */,
 				89C5BC301E1C204600A0BA76 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,12 +249,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "CoinAlert MacOS/CoinAlert MacOS.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = W6CV48Y9Q8;
 				INFOPLIST_FILE = "CoinAlert MacOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.holojack.CoinAlert-MacOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coinalert.macos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -251,12 +267,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "CoinAlert MacOS/CoinAlert MacOS.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = W6CV48Y9Q8;
 				INFOPLIST_FILE = "CoinAlert MacOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.holojack.CoinAlert-MacOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coinalert.macos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -264,7 +284,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		89C5BC221E1C204600A0BA76 /* Build configuration list for PBXProject "CoinAlert MacOS" */ = {
+		89C5BC221E1C204600A0BA76 /* Build configuration list for PBXProject "CoinAlert" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				89C5BC321E1C204600A0BA76 /* Debug */,
